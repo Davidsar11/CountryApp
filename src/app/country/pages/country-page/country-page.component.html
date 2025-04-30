@@ -1,0 +1,17 @@
+<!--  -->
+@if(countryResource.error()){
+
+  <country-not-found/>
+
+}
+
+<!--  -->
+
+
+<!--  -->
+@if(countryResource.hasValue()){
+
+  <country-information-ui [country]="countryResource.value()"/>
+}
+
+
